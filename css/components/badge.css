@@ -1,0 +1,45 @@
+.badge {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background-color: tomato;
+    border-radius: 50%;
+    color: #fff;
+}
+
+.badge--dot, .badge__caution {
+    position: relative;
+}
+
+.badge--dot::after {
+    content: '';
+    position: absolute;
+    top: -0.5em;
+    right: -0.5em;
+    display: block;
+    width: 0.3em;
+    height: 0.3em;
+    background-color: tomato;
+    border-radius: 50%;
+    color: #fff;
+}
+
+.badge__caution::after {
+    content: '!';
+    position: absolute;
+    top: 50%;
+    right: -20px;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 14px;
+    height: 14px;
+    border: 1px solid tomato;
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: 900;
+    color: tomato;
+}

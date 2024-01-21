@@ -4,11 +4,30 @@
 
 /* Components */
 @import "components/status-bar.css";
+@import "components/nav-bar.css";
+@import "components/screen-header.css";
+@import "components/user-component.css";
+@import "components/badge.css";
+@import "components/icon-row.css";
+@import "components/alt-screen-header.css";
 
 /* Screens */
 @import "screens/login.css";
+@import "screens/friends.css";
+@import "screens/find.css";
+@import "screens/more.css";
+@import "screens/settings.css";
+@import "screens/chat.css";
 
 body {
+    padding: 25px 0 80px 0;
+    background: url('../img/background.jpg') no-repeat center center;
     font-family: 'Space Grotesk', sans-serif;
+    color: #2e363e;
+    letter-spacing: -1px;
+}
+
+.main-screen {
+    padding: 0px var(--horizontal-space);
 }
 
