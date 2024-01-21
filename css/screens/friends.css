@@ -29,3 +29,42 @@
     justify-content: space-between;
     color: var(--gray);
 }
+
+@keyframes hideSplashScreen {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+      visibility: hidden;
+    }
+}
+
+#splash-screen {
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background: url('../../img/friend.gif') no-repeat center center / cover;
+    animation: hideSplashScreen 0.3s ease-in-out forwards;
+    animation-delay: 1.5s;
+    font-size: 132px;
+    color: var(--pink);
+}
+
+#splash-screen::after {
+    content: 'Welcome';
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    color: #FD6CA3;
+    text-shadow: 0px 3px #E0B1F9;
+    -webkit-text-stroke: 0.2px #E0B1F9;
+}
+
+
