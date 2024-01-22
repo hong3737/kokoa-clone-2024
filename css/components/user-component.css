@@ -15,6 +15,7 @@
 
 a:has(.user-component):hover .user-component {
     background-color: rgba(255, 255, 255, 1);
+    scale: 1.05;
 }
 
 .user-component,
